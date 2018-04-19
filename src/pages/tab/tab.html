@@ -1,0 +1,23 @@
+<!-- <ion-header>
+  <ion-navbar>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="ios-search"></ion-icon>
+      </button>
+  
+      <ion-title>
+           medicine Reminder
+      </ion-title>
+  
+      <ion-buttons end>
+        <button ion-button icon-only (click)="openModal2()">
+          <ion-icon name="ios-podium"></ion-icon>
+        </button>
+      </ion-buttons>
+</ion-navbar>
+</ion-header> -->
+
+<ion-tabs selectedIndex="1">
+  <ion-tab tabIcon="md-barcode" TabTitle="Home" [root]="tab1"></ion-tab>
+  <ion-tab tabIcon="ios-alarm" TabTitle="List"[root]="tab2"></ion-tab>
+  <ion-tab tabIcon="contact" TabTitle="About Us"[root]="tab3"></ion-tab>
+</ion-tabs>

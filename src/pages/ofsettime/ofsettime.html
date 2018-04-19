@@ -1,0 +1,221 @@
+
+<ion-content padding class="background">
+  <ion-slides pager >
+
+     
+  <ion-slide>
+      
+    <div class="settime1">
+        <h2>ตั้งเวลาก่อนอาหารเช้า</h2>
+    </div>
+    <ion-card class="bgcard">
+    <ion-list>
+      <ion-list-header class="bgcard">
+        Hour
+      <ion-badge item-end color="secondary">{{TimeSetH1}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="settime" class="bgcard">
+      <ion-range min=5 max=9 pin="true" [(ngModel)]="TimeSetH1" color="secondary">
+      <ion-label range-left>5</ion-label>
+      <ion-label range-right>9</ion-label>
+      </ion-range>
+      </ion-item>
+
+      <ion-list-header class="bgcard">
+        minute
+      <ion-badge item-end color="secondary">{{TimeSetM1}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="bgcard">
+      <ion-range min="0" max="59" pin="true" [(ngModel)]="TimeSetM1" color="secondary">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>59</ion-label>
+      </ion-range>
+      </ion-item>
+    </ion-list>
+    </ion-card>
+  </ion-slide>
+  
+  <ion-slide >
+  <h2>หลังอาหารเช้า</h2>
+  <ion-card class="bgcard">
+    <ion-list>
+      <ion-list-header class="bgcard">
+        Hour
+      <ion-badge item-end color="secondary">{{TimeSetH2}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="settime" class="bgcard">
+      <ion-range min=5 max=9 pin="true" [(ngModel)]="TimeSetH2" color="secondary">
+      <ion-label range-left>5</ion-label>
+      <ion-label range-right>9</ion-label>
+      </ion-range>
+      </ion-item>
+      <ion-list-header class="bgcard"> 
+        minute
+      <ion-badge item-end color="secondary">{{TimeSetM2}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="bgcard">
+      <ion-range min="0" max="59" pin="true" [(ngModel)]="TimeSetM2" color="secondary">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>59</ion-label>
+      </ion-range>
+      </ion-item>
+      </ion-list>
+    </ion-card>
+      </ion-slide>
+      
+  <ion-slide>
+  <h2>ก่อนอาหารเที่ยง</h2>
+  <ion-card class="bgcard">
+    <ion-list>
+      <ion-list-header class="bgcard">
+        Hour
+      <ion-badge item-end color="secondary">{{TimeSetH3}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="settime" class="bgcard">
+      <ion-range min=10 max=14 pin="true" [(ngModel)]="TimeSetH3" color="secondary">
+      <ion-label range-left>10</ion-label>
+      <ion-label range-right>14</ion-label>
+      </ion-range>
+      </ion-item>
+      <ion-list-header class="bgcard">
+        minute
+      <ion-badge item-end color="secondary">{{TimeSetM3}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="bgcard">
+      <ion-range min="0" max="59" pin="true" [(ngModel)]="TimeSetM3" color="secondary">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>59</ion-label>
+      </ion-range>
+      </ion-item>
+      </ion-list>
+    </ion-card>
+      </ion-slide>
+  <ion-slide>
+  <h2>หลังอาหารเที่ยง</h2>
+  <ion-card class="bgcard">
+    <ion-list>
+      <ion-list-header class="bgcard">
+        Hour
+      <ion-badge item-end color="secondary">{{TimeSetH4}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="settime" class="bgcard">
+      <ion-range min=10 max=14 pin="true" [(ngModel)]="TimeSetH4" color="secondary">
+      <ion-label range-left>10</ion-label>
+      <ion-label range-right>14</ion-label>
+      </ion-range>
+      </ion-item>
+      <ion-list-header class="bgcard">
+        minute
+      <ion-badge item-end color="secondary">{{TimeSetM4}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="bgcard">
+      <ion-range min="0" max="59" pin="true" [(ngModel)]="TimeSetM4" color="secondary">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>59</ion-label>
+      </ion-range>
+      </ion-item>
+      </ion-list>
+    </ion-card>
+      </ion-slide>
+      <ion-slide >
+  <h2>ก่อนอาหารเย็น</h2>
+  <ion-card class="bgcard">
+    <ion-list>
+      <ion-list-header class="bgcard">
+        Hour
+      <ion-badge item-end color="secondary">{{TimeSetH5}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="settime" class="bgcard">
+      <ion-range min=15 max=19 pin="true" [(ngModel)]="TimeSetH5" color="secondary">
+      <ion-label range-left>15</ion-label>
+      <ion-label range-right>19</ion-label>
+      </ion-range>
+      </ion-item>
+      <ion-list-header class="bgcard">
+        minute
+      <ion-badge item-end color="secondary">{{TimeSetM5}}</ion-badge>
+      </ion-list-header>
+      <ion-item class="bgcard">
+      <ion-range min="0" max="59" pin="true" [(ngModel)]="TimeSetM5" color="secondary">
+      <ion-label range-left>0</ion-label>
+      <ion-label range-right>59</ion-label>
+      </ion-range>
+      </ion-item>
+      </ion-list>
+    </ion-card>
+      </ion-slide>
+        
+  <ion-slide>
+    <h2>หลังอาหารเย็น</h2>
+    <ion-card class="bgcard">
+            <ion-list>
+                <ion-list-header class="bgcard">
+                    Hour
+                  <ion-badge item-end color="secondary">{{TimeSetH6}}</ion-badge>
+                </ion-list-header>
+                <ion-item class="settime" class="bgcard">
+                  <ion-range min=15 max=19 pin="true" [(ngModel)]="TimeSetH6" color="secondary">
+                    <ion-label range-left>15</ion-label>
+                    <ion-label range-right>19</ion-label>
+                  </ion-range>
+                </ion-item>
+              
+                  <ion-list-header class="bgcard">
+                    minute
+                    <ion-badge item-end color="secondary">{{TimeSetM6}}</ion-badge>
+                  </ion-list-header>
+                  <ion-item class="bgcard">
+                    <ion-range min="0" max="59" pin="true" [(ngModel)]="TimeSetM6" color="secondary">
+                      <ion-label range-left>0</ion-label>
+                      <ion-label range-right>59</ion-label>
+                    </ion-range>
+                  </ion-item>
+                </ion-list>
+                </ion-card>
+          </ion-slide>
+          
+          <ion-slide>
+              <h2>ก่อนนอน</h2>
+              <ion-card class="bgcard">
+              <ion-list>
+                  <ion-list-header class="bgcard">
+                      Hour
+                    <ion-badge item-end color="secondary">{{TimeSetH7}}</ion-badge>
+                  </ion-list-header>
+                  <ion-item class="settime" class="bgcard">
+                    <ion-range min=19 max=23 pin="true" [(ngModel)]="TimeSetH7" color="secondary">
+                      <ion-label range-left>19</ion-label>
+                      <ion-label range-right>23</ion-label>
+                    </ion-range>
+                  </ion-item >
+                
+                    <ion-list-header class="bgcard">
+                      minute
+                      <ion-badge item-end color="secondary">{{TimeSetM7}}</ion-badge>
+                    </ion-list-header>
+                    <ion-item class="bgcard">
+                      <ion-range min="0" max="59" pin="true" [(ngModel)]="TimeSetM7" color="secondary">
+                        <ion-label range-left>0</ion-label>
+                        <ion-label range-right>59</ion-label>
+                      </ion-range>
+                    </ion-item>
+                  </ion-list>
+                </ion-card>
+            </ion-slide>
+
+      <ion-slide>
+    
+        <h2>เสร็จ</h2>
+        <ion-card>
+        <ion-item >ก่อนอาหารเช้า : {{TimeSetH1}}:{{TimeSetM1}}</ion-item> 
+        <ion-item>หลังอาหารเช้า : {{TimeSetH2}}:{{TimeSetM2}}</ion-item> 
+        <ion-item > ก่อนอาหารกลางวัน : {{TimeSetH3}}:{{TimeSetM3}}</ion-item> 
+        <ion-item>หลังอาหารกลางวัน : {{TimeSetH4}}:{{TimeSetM4}}</ion-item> 
+        <ion-item >ก่อนอาหารเย็น : {{TimeSetH5}}:{{TimeSetM5}}</ion-item> 
+        <ion-item> หลังอาหารเย็น : {{TimeSetH6}}:{{TimeSetM6}}</ion-item> 
+        <ion-item > ก่อนนอน : {{TimeSetH7}}:{{TimeSetM7}}</ion-item> 
+        <button (click)="GoOflineTabs()" ion-button color="secondary" round>เริ่มใช้งาน</button>
+        </ion-card>
+        </ion-slide>
+  </ion-slides>
+</ion-content>

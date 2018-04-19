@@ -1,0 +1,50 @@
+page-ofsetbar {
+.ggwp
+{
+    text-align: center;
+    background: #E1E2E1;
+  
+}
+.imgg
+{
+    width: 200px;
+    height: 200px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.BGCOLOR
+    {
+      background: color($colors,blackgroungD);
+    }
+    .test
+    {
+        text-align: center;
+    }
+    .background
+{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(10deg,#F5F5F6,#E1E2E1);
+}
+.bgcard{
+  background: #E1E2E1;
+}
+.bgtt
+{
+ background:  #E1E2E1;
+}
+.flex-con
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-con > div {
+  width: 45%;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+}

@@ -1,0 +1,63 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="test">สแกนบาร์โค้ดเพิ่มยา</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="background">
+    <ion-card class="bgcard">
+   
+        <button ion-item> รหัส : {{data}}</button>
+      </ion-card>
+        <div padding class="flex-con" >
+            <div><button (click)="Scan()" ion-button color="colorbtn" block>{{textbutton1}}</button></div>
+            <div><button (click)="Next()" ion-button color="colorbtn" block>{{textbutton2}}</button></div>
+          </div>
+    
+    <!-- <img class="imgg" src="./../../assets/imgs/medical.png"> -->
+ 
+<ion-card class="bgcard">
+<ion-item>
+    <ion-label floating >ชื่อยา</ion-label>
+    <ion-input   type="text" value=""[(ngModel)]="Name"></ion-input>
+</ion-item>
+  <button ion-item class="ggwp"> เลือกช่วงเวลา/จำนวนยาที่เพิ่มไปแล้ว:{{CountArray}}</button>
+
+    <ion-item  >
+      <ion-label>ก่อนอาหารเช้า</ion-label>
+      <ion-checkbox [(ngModel)]="SetTime1"></ion-checkbox>
+    </ion-item>
+    <ion-item class="bgcard">
+      <ion-label>หลังอาหารเช้า</ion-label>
+      <ion-checkbox [(ngModel)]="SetTime2"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>ก่อนอาหารกลางวัน</ion-label>
+      <ion-checkbox [(ngModel)]="SetTime3"></ion-checkbox>
+    </ion-item>
+    <ion-item class="bgcard">
+      <ion-label>หลังอาหารกลางวัน</ion-label>
+      <ion-checkbox [(ngModel)]="SetTime4"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>ก่อนอาหารเย็น</ion-label>
+      <ion-checkbox [(ngModel)]="SetTime5"></ion-checkbox>
+    </ion-item>
+    <ion-item class="bgcard">
+      <ion-label>หลังอาหารเย็น</ion-label>
+      <ion-checkbox [(ngModel)]="SetTime6"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>ก่อนนอน</ion-label>
+      <ion-checkbox [(ngModel)]="SetTime7"></ion-checkbox>
+    </ion-item>
+  </ion-card>
+
+
+
+
+   
+</ion-content>

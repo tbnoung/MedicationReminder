@@ -1,0 +1,58 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Medication Reminder</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="background">
+
+    <ion-card class="bgcard"> 
+      <ion-list class="bgcard">
+        <ion-item class="bgcard2"> ก่อนอาหารเช้า </ion-item>
+        <ion-item class="bgcard2"> เวลา {{TimeBBH}} : {{TimeBBM}}</ion-item>
+      
+        <ion-item class="bgcard3"> หลังอาหารเช้า </ion-item>
+        <ion-item class="bgcard3"> เวลา {{TimeABH}} : {{TimeABM}}</ion-item>
+      </ion-list>
+    </ion-card>
+
+    <ion-card >
+      
+        <ion-list class="bgcard">
+            <ion-item class="bgcard2">
+        ก่อนอาหารกลางวัน
+        <ion-item class="bgcard2">เวลา {{TimeBLH}}:{{TimeBLM}}</ion-item>
+        </ion-item>
+        <ion-item class="bgcard3">
+        หลังอาหารกลางวัน
+        <ion-item class="bgcard3">เวลา {{TimeALH}}:{{TimeALM}}</ion-item>
+      </ion-item>
+      </ion-list>
+   
+    </ion-card>
+    <ion-card class="bgcard">
+      
+        <ion-list class="bgcard">
+            <ion-item class="bgcard2">
+        ก่อนอาหารเย็น
+        <ion-item class="bgcard2">เวลา {{TimeBDH}}:{{TimeBDM}}</ion-item>
+</ion-item>
+        <ion-item class="bgcard3">
+        หลังอาหารเย็น
+        <ion-item class="bgcard3"> เวลา {{TimeADH}}:{{TimeADM}}</ion-item>
+      </ion-item>
+      <ion-item class="bgcard2">
+        ก่อนนอน
+        <ion-item class="bgcard2"> เวลา {{TimeBNH}}:{{TimeBNM}}</ion-item>
+      </ion-item>
+     </ion-list>
+  
+    </ion-card>
+     
+     <button (click)="tester()"ion-button color="colorbtn" block>ไปหน้าแจ้งเตือน</button>
+
+   สถานะล่าสุด : {{FirstStateTime}}
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-content class="background">
+
+    <ion-list>
+        
+        <img src="assets/imgs/medical.png" class="logo">
+      </ion-list>
+<ion-card class="bgcard">
+       <ion-card-content>
+         <ion-list class="bgtt">
+        <ion-item class="bgtt">
+          <ion-label floating class="text">Username</ion-label>
+          <ion-input type="text" value=""[(ngModel)]="username"></ion-input>
+        </ion-item>
+    
+        <ion-item class="bgtt">
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" value=""[(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-list>
+  
+
+  
+  <div padding class="flex-con" >
+      <div><button (click)="goTabs()"ion-button color="colorbtn" block>Sign In</button></div>
+      <div><button (click)="goRegi()"ion-button color="colorbtn" block>Register</button></div>
+    </div>
+      <div class="p">-or-</div>
+     <div class="p1"><button (click)="offline()"ion-button color="colorbtn" block>Offline Mode</button></div>
+
+     <!-- <ion-item class="bgtt">
+        <ion-label floating>Domain URL:</ion-label>
+        <ion-input type="text" value=""[(ngModel)]="DomainName"></ion-input>
+     </ion-item>
+     <div class="p1"><button (click)="URL()"ion-button color="colorbtn" block>Set URL Online</button></div> -->
+
+  </ion-card-content>
+    </ion-card>
+
+</ion-content>
+

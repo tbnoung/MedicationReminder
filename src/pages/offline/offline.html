@@ -1,0 +1,30 @@
+
+<ion-content padding class="BGCOLOR">
+        <img src="assets/imgs/user.png" class="logo">
+        <ion-card class="bgcard">
+     
+    <ion-list>
+
+        <ion-item class="bgcard">
+          <ion-label fixed>Username</ion-label>
+          <ion-input type="text" value=""[(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item class="bgcard">
+            <ion-label fixed>Email</ion-label>
+            <ion-input type="text" value=""[(ngModel)]="Email"></ion-input>
+        </ion-item>
+        <ion-item class="bgcard">
+            <ion-label fixed>phone</ion-label>
+            <ion-input type="text" value=""[(ngModel)]="Tel"></ion-input>
+        </ion-item>
+        <ion-item class="bgcard">
+            <ion-label fixed>Age</ion-label>
+            <ion-input type="text" value=""[(ngModel)]="Age"></ion-input>
+        </ion-item>
+        
+        <div padding>
+            <button (click)="goSettime()"ion-button color="colorbtn" block>Sign In</button>
+          </div>
+      </ion-list>
+</ion-card>
+</ion-content>

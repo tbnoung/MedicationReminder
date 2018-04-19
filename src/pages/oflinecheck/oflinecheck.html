@@ -1,0 +1,39 @@
+
+<ion-content padding class="background">
+
+    <h2 class="tt">แจ้งเตือน</h2>
+    <ion-card class="bgcard">
+        <ion-item class="bgcard">บาร์โค๊ดยา &nbsp;</ion-item>
+        <ion-item class="bgcard">{{data.text}}</ion-item></ion-card>
+  
+    <ion-card class="bgcard"><button ion-button color="colorbtn" block (click)="scan()">Scan</button></ion-card>
+  <ion-card class="bgcard2"><ion-item class="bgcard2">{{TTFF}}</ion-item></ion-card>
+  
+  <!-- BARCODE : {{BarcodeUse[0]}}<br>
+  BARCODE : {{BarcodeUse[1]}}<br>
+  BARCODE : {{BarcodeUse[2]}}<br>
+  BARCODE : {{BarcodeUse[3]}}<br>
+  BARCODE : {{BarcodeUse[4]}}<br> -->
+
+  <!-- <ion-item  *ngFor ="let kkli of BarcodeDataStore" >
+      ALLBarcodeData :{{kkli}}
+</ion-item>
+<ion-item  *ngFor ="let kkliw of BarcodeUse" >
+    ALLBarcodeUSE :{{kkliw}}
+</ion-item>
+
+  CountRunStateNOW CHECK : {{count}}<br>
+  All Array DATA control upper me : {{countarrayUSE}}<br>
+  What's state  : {{statechackBC}}<br>
+
+  <ion-item  *ngFor ="let data of PamacTime" >
+      ALLPamacTime :{{data}}
+  </ion-item> -->
+
+ 
+  <!-- <button ion-button color="primary" block (click)="test()">test1</button>
+  <button ion-button color="primary" block (click)="test2()">test2</button>
+  <button ion-button color="primary" block (click)="test3()">test3</button>
+
+  <button ion-button color="primary" block (click)="pop()">OK Pop</button> -->
+  </ion-content>

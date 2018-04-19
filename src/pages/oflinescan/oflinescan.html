@@ -1,0 +1,38 @@
+<ion-content padding class="background">
+    <h2>ตรวจสอบข้อมูลยา</h2>
+    <!-- <ion-list><h2>รับประทานครั้งล่าสุดเมื่อ</h2></ion-list> -->
+    <!-- <ion-card class="bgcolor"> -->
+      <!-- <ion-item> -->
+    <ion-list>
+      <ion-card >
+      <ion-item class="bgcard2"> ข้อมูลที่สเเกนได้  </ion-item>
+      <ion-item class="bgcard3">{{data.text}}</ion-item>
+      </ion-card>
+      <ion-card>
+      <ion-item class="bgcard2"> ชื่อยา </ion-item>
+      <ion-item class="bgcard3">{{Showname}}</ion-item>
+      </ion-card>
+      <ion-card>
+      <ion-item class="bgcard2"> รับประทานครั้งล่าสุด  </ion-item>
+      <ion-item class="bgcard3">{{ShowTime}}</ion-item>
+      </ion-card>
+      
+        <!-- <ion-item  *ngFor ="let kkli of NameDataStore" >
+                ชื่อทั้งหมด :{{kkli}}
+          </ion-item>
+
+          <ion-item  *ngFor ="let kkli of BarcodeDataStore" >
+                บาร์โค้ดทั้งหมด :{{kkli}}
+          </ion-item>
+        
+          <ion-item  *ngFor ="let kkli of TNowDataStore" >
+                สถานะกินยาทั้งหมด :{{kkli}}
+          </ion-item> -->
+    </ion-list>
+    
+<!-- </ion-item> -->
+<!-- </ion-card> -->
+<button ion-button color="colorbtn" block (click)="scan()">Scan</button>
+
+  
+  </ion-content>

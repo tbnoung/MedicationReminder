@@ -1,0 +1,32 @@
+
+    <ion-card class="bgcard">
+      <ion-list>
+          <ion-item class="bgcard">         
+                    <ion-item >Name &nbsp;&nbsp; {{username}}</ion-item>               
+           </ion-item>
+          <ion-item class="bgcard">             
+                  <ion-item>
+                    Email &nbsp;&nbsp; {{email}}
+                  </ion-item>                                
+          </ion-item>
+          <ion-item class="bgcard">              
+                  <ion-item>
+                    Tel &nbsp;&nbsp;{{tel}}
+                  </ion-item>           
+          </ion-item>
+          <ion-item class="bgcard"> 
+                  <ion-item>
+                    Age &nbsp;&nbsp;{{age}}
+                  </ion-item>  
+          </ion-item>
+          <div padding>
+              <button (click)="edit()"ion-button color="colorbtn" block>Edit</button>
+              <button (click)="Logout()"ion-button color="colorbtn" block>Log Out</button>
+            </div>
+        </ion-list>
+      </ion-card>
+
+
+<!-- <ion-content padding class="background">
+  <button ion-button full (click)="Logout()" color="colorbtn">Logout</button>
+</ion-content> -->
